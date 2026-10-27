@@ -1,0 +1,76 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    padding: 20px;
+}
+
+/* Секция меню */
+.menu-section {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.section-title {
+    font-size: 32px;
+    margin-bottom: 24px;
+    color: #333;
+}
+
+/* ბარათების კონტეინერი (Flexbox) */
+.menu-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+/* ცალკე ბარათის სტილი */
+.menu-card {
+    background-color: #ffffff;
+    border-radius: 12px;
+    padding: 20px;
+    width: 250px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 12px;
+}
+
+.card-title {
+    font-size: 20px;
+    margin-bottom: 8px;
+}
+
+.card-price {
+    font-size: 18px;
+    font-weight: bold;
+    color: #e63946;
+    margin-bottom: 12px;
+}
+
+.card-button {
+    background-color: #2a9d8f;
+    color: white;
+    border: none;
+    padding: 10px 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.card-button:hover {
+    background-color: #21867a;
+}
