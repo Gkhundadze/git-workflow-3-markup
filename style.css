@@ -7,22 +7,23 @@
 body {
     font-family: Arial, sans-serif;
     background-color: #f8f9fa;
-    padding: 20px;
+    color: #333333;
+    line-height: 1.6;
 }
 
-/* Секция меню */
+/* 2. menu section (Hot Items) */
 .menu-section {
     text-align: center;
-    margin-top: 40px;
+    padding: 40px 20px;
 }
 
 .section-title {
     font-size: 32px;
     margin-bottom: 24px;
-    color: #333;
+    color: #333333;
 }
 
-/* ბარათების კონტეინერი (Flexbox) */
+/* cards container (Flexbox) */
 .menu-container {
     display: flex;
     justify-content: center;
@@ -30,7 +31,7 @@ body {
     flex-wrap: wrap;
 }
 
-/* ცალკე ბარათის სტილი */
+/* style for individual card */
 .menu-card {
     background-color: #ffffff;
     border-radius: 12px;
@@ -69,8 +70,82 @@ body {
     border-radius: 6px;
     cursor: pointer;
     font-weight: bold;
+    transition: background-color 0.2s;
 }
 
 .card-button:hover {
     background-color: #21867a;
+}
+
+/* 3. Styles for Footer (Bottom of the Site) */
+.footer {
+    background-color: #1a1a1a;
+    color: #ffffff;
+    padding: 40px 20px 20px;
+    margin-top: 60px;
+}
+
+.footer-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.footer-info, .footer-links, .footer-contact {
+    flex: 1;
+    min-width: 200px;
+}
+
+.footer-logo {
+    font-size: 24px;
+    margin-bottom: 12px;
+    color: #2a9d8f;
+}
+
+.footer-text {
+    color: #cccccc;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.footer-links h4, .footer-contact h4 {
+    font-size: 18px;
+    margin-bottom: 12px;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links li {
+    margin-bottom: 8px;
+}
+
+.footer-links a {
+    color: #cccccc;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.footer-links a:hover {
+    color: #2a9d8f;
+}
+
+.footer-contact p {
+    color: #cccccc;
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid #333333;
+    font-size: 13px;
+    color: #888888;
 }
