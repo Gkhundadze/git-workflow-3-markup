@@ -1,80 +1,156 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Food Website</title>
-    <!-- styles -->
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Burger – Burgers That Love the Earth</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <!-- menu (Hot Items) -->
-    <section class="menu-section">
-        <h2 class="section-title">Hot Items</h2>
-        
-        <div class="menu-container">
-            <!-- card 1 -->
-            <div class="menu-card">
-                <img src="assets/MacBook Air (2022).png" alt="Burger" class="card-image">
-                <h3 class="card-title">Veggie Burger</h3>
-                <p class="card-price">$8.99</p>
-                <button class="card-button">Add to Cart</button>
-            </div>
+<!-- HERO -->
+<header class="hero" id="home">
+  <div class="blob"></div>
+  <div class="container">
+    <nav>
+      <a href="#home" class="logo">
+        <svg viewBox="0 0 24 24"><path d="M12 3C7 3 3.5 6 3.5 9.5h17C20.5 6 17 3 12 3zM3 11h18v2H3zm1 3h16l-2 2.5h-4l-2 1.5-2-1.5H6zM5 18.5h14v.5a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2z"/></svg>
+        Burger
+      </a>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#hot">Shop</a></li>
+        <li><a href="#about">Menu</a></li>
+        <li><a href="#how">Order</a></li>
+      </ul>
+      <div class="nav-icons">
+        <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M21 21l-5-5"/></svg>
+        <svg viewBox="0 0 24 24"><path d="M5 8h14l-1 12H6zM9 8V6a3 3 0 0 1 6 0v2"/></svg>
+        <svg viewBox="0 0 24 24"><path d="M4 8h16M12 16h8"/></svg>
+      </div>
+    </nav>
 
-            <!-- card 2 -->
-            <div class="menu-card">
-                <img src="assets/MacBook Air (2022)-1.png" alt="Burger" class="card-image">
-                <h3 class="card-title">Classic Cheeseburger</h3>
-                <p class="card-price">$10.99</p>
-                <button class="card-button">Add to Cart</button>
-            </div>
+    <div class="hero-grid">
+      <div class="hero-text">
+        <div class="rating-card">
+          <div class="stars">★★★★★ &nbsp;4.5</div>
+          5k Happy review
         </div>
-    </section>
+        <h4>Crispy, Crunchy, Veggie Deliciousness!</h4>
+        <h1>Burgers That<br>Love the Earth!</h1>
+        <div class="hero-actions">
+          <a href="#hot" class="btn">Explore</a>
+          <a href="#" class="play"><span></span>Play Demo...</a>
+        </div>
+      </div>
+      <div class="hero-img">
+        <div class="badge">75%<br>OFF</div>
+        <img src="images/hero-burgers.png" alt="Two veggie burgers on a wooden board">
+      </div>
+    </div>
+  </div>
+</header>
 
-    <!-- Contact / About Us Section (вставляем ДО футера) -->
-    <section class="contact-section">
-        <div class="contact-container">
-            <div class="contact-text">
-                <h2>About Our Kitchen</h2>
-                <p>We prepare fresh, delicious meals using high-quality local ingredients. Order online and get your food delivered fast!</p>
-            </div>
-            <form class="contact-form">
-                <h3>Subscribe for Offers</h3>
-                <input type="email" placeholder="Enter your email" required class="contact-input">
-                <button type="submit" class="contact-btn">Subscribe</button>
-            </form>
-        </div>
-    </section>
+<!-- HOT ITEMS -->
+<section class="hot" id="hot">
+  <div class="container">
+    <h2 class="section-title">Hot Items</h2>
+    <p class="sub">Locally sourced, organic ingredients for a fresh and eco-friendly experience</p>
+    <div class="slider">
+      <button class="arrow" aria-label="Previous">←</button>
+      <div class="cards">
+        <article class="card"><span class="heart">♡</span><img src="images/burger-1.png" alt=""><h5>Veg Chizy Burger</h5><div class="price"><span>₹250.00</span><span>🛍</span></div><a href="#" class="go">→</a></article>
+        <article class="card"><span class="heart">♡</span><img src="images/burger-2.png" alt=""><h5>Veg Chizy Burger</h5><div class="price"><span>₹250.00</span><span>🛍</span></div><a href="#" class="go">→</a></article>
+        <article class="card"><span class="heart">♡</span><img src="images/burger-3.png" alt=""><h5>Veg Chizy Burger</h5><div class="price"><span>₹250.00</span><span>🛍</span></div><a href="#" class="go">→</a></article>
+        <article class="card"><span class="heart">♡</span><img src="images/burger-4.png" alt=""><h5>Veg Chizy Burger</h5><div class="price"><span>₹250.00</span><span>🛍</span></div><a href="#" class="go">→</a></article>
+      </div>
+      <button class="arrow" aria-label="Next">→</button>
+    </div>
+    <div class="dots"><i></i><i class="on"></i><i></i><i></i></div>
+  </div>
+</section>
 
-    <!-- Footer Section -->
-    <footer class="footer">
-        <div class="footer-container">
-            <div class="footer-info">
-                <h3 class="footer-logo">Food Website</h3>
-                <p class="footer-text">The best food delivered straight to your doorstep.</p>
-            </div>
-            
-            <div class="footer-links">
-                <h4>Quick Links</h4>
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Menu</a></li>
-                    <li><a href="#">About Us</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
-            </div>
+<!-- PROMO -->
+<section class="promo">
+  <div class="container">
+    <div>
+      <h6>Get Up To</h6>
+      <h2>50% OFF</h2>
+      <p>On Your 2 Order's</p>
+      <a href="#" class="btn">Order Now</a>
+    </div>
+    <img src="images/combo.png" alt="Burgers, fries and a drink">
+  </div>
+</section>
 
-            <div class="footer-contact">
-                <h4>Contact Us</h4>
-                <p>Email: info@foodwebsite.com</p>
-                <p>Phone: +1 234 567 890</p>
-            </div>
-        </div>
-        <div class="footer-bottom">
-            <p>&copy; 2026 Food Website. All rights reserved.</p>
-        </div>
-    </footer>
+<!-- WHO WE ARE -->
+<section class="about" id="about">
+  <div class="container">
+    <h2 class="section-title">Who We Are</h2>
+    <div class="about-grid">
+      <div class="about-text">
+        <p>Community-Focused Initiatives Such As Partnerships With Local Farms Or Environmental Organizations.</p>
+        <p>Social Media Integration For Sharing Photos, Reviews, And Engaging With The Veggie Burger Community.</p>
+        <hr>
+        <p>Nutritional Information Provided For Each Menu Item, Catering To Health-Conscious Customers.</p>
+        <p>Wide Range Of Veggie Burger Options Including Classic, Gourmet, And Customizable Choices.</p>
+        <a href="#" class="share">➤ &nbsp;Share</a>
+      </div>
+      <div class="about-img"><img src="images/chef.png" alt="Smiling chef holding a burger"></div>
+    </div>
+  </div>
+</section>
+
+<!-- HOW IT WORKS -->
+<section class="how" id="how">
+  <div class="container">
+    <h2 class="section-title">How Does It Works</h2>
+    <div class="steps">
+      <div class="step"><div class="ico"><img src="images/icon-meals.png" alt=""></div><h3>Choose Your Meals</h3><p>Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing Elit, Sed Do Eiusmod Tempor</p><span>→</span></div>
+      <div class="step"><div class="ico"><img src="images/icon-track.png" alt=""></div><h3>Track Order</h3><p>Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing Elit, Sed Do Eiusmod Tempor</p><span>→</span></div>
+      <div class="step"><div class="ico"><img src="images/icon-collect.png" alt=""></div><h3>Collect Order</h3><p>Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing Elit, Sed Do Eiusmod Tempor</p><span>→</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="reviews">
+  <div class="container">
+    <h2 class="section-title">What Our Customer Says</h2>
+    <div class="review-row">
+      <div class="review side"><p>Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing Elit</p></div>
+      <div class="review">
+        <div class="quote">“</div>
+        <p>Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing Elit, Sed Do Eiusmod Tempor Incididunt Ut Labore Et Dolore Magna Aliqua</p>
+        <div>★★★★★</div>
+        <div class="name">Mandy Oza</div>
+        <small>Xyz Company Ceo</small>
+      </div>
+      <div class="review side"><p>Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing Elit</p></div>
+    </div>
+    <div class="review-nav"><button aria-label="Previous">‹</button><button aria-label="Next">›</button></div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+    <div class="foot-grid">
+      <div class="foot-brand">
+        <a href="#home" class="logo" style="font-size:1rem">
+          <svg viewBox="0 0 24 24" style="width:26px;height:26px"><path d="M12 3C7 3 3.5 6 3.5 9.5h17C20.5 6 17 3 12 3zM3 11h18v2H3zm1 3h16l-2 2.5h-4l-2 1.5-2-1.5H6zM5 18.5h14v.5a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2z"/></svg>Burger
+        </a>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+        <span>+91 9876543210</span><span>mail@gmail.com</span><span>xyz, anyware rode, sectore 4</span>
+      </div>
+      <div><h6>Service</h6><ul><li><a href="#">Burger</a></li><li><a href="#">Menu</a></li><li><a href="#">Hot Items</a></li><li><a href="#">About</a></li><li><a href="#">Services</a></li></ul></div>
+      <div><h6>Follow Us</h6><ul><li><a href="#">Facebook</a></li><li><a href="#">Instagram</a></li><li><a href="#">Linked In</a></li><li><a href="#">Tweeter</a></li><li><a href="#">Whatsapp</a></li></ul></div>
+      <div><h6>Subscribe For New Update</h6><div class="sub-box"><input type="email" placeholder="Enter Email..."><button aria-label="Subscribe">→</button></div></div>
+    </div>
+    <p class="copy">Burger.Com © All Right Reserve</p>
+  </div>
+</footer>
 
 </body>
 </html>
