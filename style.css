@@ -1,0 +1,119 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #ffcfad;
+    color: white;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.header {
+    width: 100%;
+    height: 70px;
+    padding: 0 6%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.navigation {
+    display: flex;
+    gap: 35px;
+}
+
+.navigation a {
+    font-size: 12px;
+}
+
+.menu-icon {
+    font-size: 22px;
+    cursor: pointer;
+}
+
+.hero {
+    min-height: 550px;
+    padding: 60px 6%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: linear-gradient(110deg, #ffd4b5, #ff9d49);
+    overflow: hidden;
+}
+
+.hero-content {
+    width: 50%;
+    position: relative;
+    z-index: 1;
+}
+
+.review {
+    width: fit-content;
+    background: white;
+    color: #ff7900;
+    padding: 12px 18px;
+    border-radius: 15px;
+    margin-bottom: 35px;
+    font-size: 13px;
+}
+
+.review p {
+    margin-top: 7px;
+}
+
+.hero-subtitle {
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.hero h1 {
+    font-size: 48px;
+    line-height: 1.1;
+    margin: 8px 0 20px;
+}
+
+.hero-buttons {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.explore-btn {
+    background: white;
+    color: #ff7900;
+    padding: 14px 35px;
+    border-radius: 8px;
+}
+
+.video-btn {
+    width: 45px;
+    height: 45px;
+    border: 2px solid white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-image {
+    width: 50%;
+}
+
+.hero-image img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
